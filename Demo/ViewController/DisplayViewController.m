@@ -116,12 +116,6 @@
     APIContentTableViewCell *cell = [self.contentTableView cellForRowAtIndexPath:indexPath];
     [cell setBackgroundColor:[UIColor colorWithRed:239/255.0 green:239/255.0 blue:244/255.0 alpha:1]];
     
-    //    self.detailVC = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-    //    self.detailVC.webURL = [[self.responseArray objectAtIndex:indexPath.row] valueForKey:@"webUrl"];
-    //    self.detailVC.selectedIndex = indexPath.row;
-    //    self.detailVC.delegate = self;
-    //    [self presentViewController:self.detailVC animated:YES completion:NULL];
-    
     if (self.detailVC != nil) {
         [self.detailVC removeFromParentViewController];
         [self.detailVC.view removeFromSuperview];
