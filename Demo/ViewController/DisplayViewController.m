@@ -11,6 +11,7 @@
 #import "APIModel.h"
 #import "DetailViewController.h"
 #import "PureLayout.h"
+#import "NSString+utility.h"
 
 @interface DisplayViewController () <UITableViewDelegate, UITableViewDataSource, DetailViewDelegate>
 
@@ -23,6 +24,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (! [self.searchString isStringPresent]) {
+        self.searchString = @"Seychelles";
+    }
+    
     [self callAPI];
     [self setUp];
 }
@@ -57,7 +63,7 @@
     [spinner startAnimating];
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-    NSURL *url = [NSURL URLWithString:@"https://content.guardianapis.com/search?q=seychelles&api-key=test"];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://content.guardianapis.com/search?q=%@&api-key=test", self.searchString]];
     
     [[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         

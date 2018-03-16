@@ -31,10 +31,16 @@
     [self.view endEditing:YES];
 
     self.displayVC = [[DisplayViewController alloc] initWithNibName:@"DisplayViewController" bundle:nil];
+    self.displayVC.searchString = self.searchTextField.text;
     [self presentViewController:self.displayVC animated:YES completion:NULL];
 }
 
 #pragma mark - UITextField Delegate Methods
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [self.view endEditing:YES];
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     

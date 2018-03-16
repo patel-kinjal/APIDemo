@@ -11,5 +11,6 @@
 @interface DisplayViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *contentTableView;
+@property (strong, nonatomic) NSString *searchString;
 
 @end

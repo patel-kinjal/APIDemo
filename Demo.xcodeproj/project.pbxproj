@@ -28,6 +28,7 @@
 		0333766E205A9B35005C00EE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0333766C205A9B35005C00EE /* DetailViewController.m */; };
 		0333766F205A9B35005C00EE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0333766D205A9B35005C00EE /* DetailViewController.xib */; };
 		03337672205A9F45005C00EE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03337671205A9F45005C00EE /* WebKit.framework */; };
+		03E17ED4205BAD3200F74AE2 /* NSString+utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E17ED3205BAD3200F74AE2 /* NSString+utility.m */; };
 		94F442E92081BB0C046C77C0 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A994EA76F4B7EC9D1933B96F /* libPods-Demo.a */; };
 		E0D045A409A73942C24FFEEA /* libPods-DemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCDE9FCAECF331D0A32D4E8 /* libPods-DemoUITests.a */; };
 		E8EC4F2CDF365651AAA662BD /* libPods-DemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BF6812D1A22C97B22E7AE3 /* libPods-DemoTests.a */; };
@@ -88,6 +89,8 @@
 		0333766C205A9B35005C00EE /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		0333766D205A9B35005C00EE /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		03337671205A9F45005C00EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		03E17ED2205BAD3200F74AE2 /* NSString+utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+utility.h"; sourceTree = "<group>"; };
+		03E17ED3205BAD3200F74AE2 /* NSString+utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+utility.m"; sourceTree = "<group>"; };
 		216E82C3E1812F064CDFFE7B /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		33BF6812D1A22C97B22E7AE3 /* libPods-DemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F07390F462841AC4E616566 /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 		03337658205A7C00005C00EE /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				03E17ED2205BAD3200F74AE2 /* NSString+utility.h */,
+				03E17ED3205BAD3200F74AE2 /* NSString+utility.m */,
 				03337664205A7CD5005C00EE /* NSDictionary+ReplaceNULL.h */,
 				03337663205A7CD5005C00EE /* NSDictionary+ReplaceNULL.m */,
 				03337662205A7CD4005C00EE /* NSObject+Extension.h */,
@@ -556,6 +561,7 @@
 				0333764C205A66A2005C00EE /* DisplayViewController.m in Sources */,
 				03337647205A637A005C00EE /* LoginViewController.m in Sources */,
 				03337667205A7CD5005C00EE /* NSObject+Extension.m in Sources */,
+				03E17ED4205BAD3200F74AE2 /* NSString+utility.m in Sources */,
 				03337616205A6281005C00EE /* ViewController.m in Sources */,
 				03337621205A6281005C00EE /* main.m in Sources */,
 				03337657205A7ABE005C00EE /* AbstractModel.m in Sources */,
