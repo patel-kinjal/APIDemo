@@ -15,6 +15,19 @@
 		03337621205A6281005C00EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03337620205A6281005C00EE /* main.m */; };
 		0333762B205A6282005C00EE /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0333762A205A6282005C00EE /* DemoTests.m */; };
 		03337636205A6282005C00EE /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03337635205A6282005C00EE /* DemoUITests.m */; };
+		03337647205A637A005C00EE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03337645205A637A005C00EE /* LoginViewController.m */; };
+		03337648205A637A005C00EE /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03337646205A637A005C00EE /* LoginViewController.xib */; };
+		0333764C205A66A2005C00EE /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0333764A205A66A2005C00EE /* DisplayViewController.m */; };
+		0333764D205A66A2005C00EE /* DisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0333764B205A66A2005C00EE /* DisplayViewController.xib */; };
+		03337652205A6ACF005C00EE /* APIContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03337650205A6ACF005C00EE /* APIContentTableViewCell.m */; };
+		03337653205A6ACF005C00EE /* APIContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03337651205A6ACF005C00EE /* APIContentTableViewCell.xib */; };
+		03337657205A7ABE005C00EE /* AbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03337656205A7ABE005C00EE /* AbstractModel.m */; };
+		03337666205A7CD5005C00EE /* NSDictionary+ReplaceNULL.m in Sources */ = {isa = PBXBuildFile; fileRef = 03337663205A7CD5005C00EE /* NSDictionary+ReplaceNULL.m */; };
+		03337667205A7CD5005C00EE /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03337665205A7CD5005C00EE /* NSObject+Extension.m */; };
+		0333766A205A827C005C00EE /* APIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03337669205A827C005C00EE /* APIModel.m */; };
+		0333766E205A9B35005C00EE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0333766C205A9B35005C00EE /* DetailViewController.m */; };
+		0333766F205A9B35005C00EE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0333766D205A9B35005C00EE /* DetailViewController.xib */; };
+		03337672205A9F45005C00EE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03337671205A9F45005C00EE /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +64,27 @@
 		03337631205A6282005C00EE /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03337635205A6282005C00EE /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		03337637205A6282005C00EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03337644205A637A005C00EE /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		03337645205A637A005C00EE /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		03337646205A637A005C00EE /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		03337649205A66A2005C00EE /* DisplayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayViewController.h; sourceTree = "<group>"; };
+		0333764A205A66A2005C00EE /* DisplayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayViewController.m; sourceTree = "<group>"; };
+		0333764B205A66A2005C00EE /* DisplayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayViewController.xib; sourceTree = "<group>"; };
+		0333764F205A6ACF005C00EE /* APIContentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIContentTableViewCell.h; sourceTree = "<group>"; };
+		03337650205A6ACF005C00EE /* APIContentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIContentTableViewCell.m; sourceTree = "<group>"; };
+		03337651205A6ACF005C00EE /* APIContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = APIContentTableViewCell.xib; sourceTree = "<group>"; };
+		03337655205A7ABE005C00EE /* AbstractModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractModel.h; sourceTree = "<group>"; };
+		03337656205A7ABE005C00EE /* AbstractModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractModel.m; sourceTree = "<group>"; };
+		03337662205A7CD4005C00EE /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		03337663205A7CD5005C00EE /* NSDictionary+ReplaceNULL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ReplaceNULL.m"; sourceTree = "<group>"; };
+		03337664205A7CD5005C00EE /* NSDictionary+ReplaceNULL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ReplaceNULL.h"; sourceTree = "<group>"; };
+		03337665205A7CD5005C00EE /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		03337668205A827C005C00EE /* APIModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIModel.h; sourceTree = "<group>"; };
+		03337669205A827C005C00EE /* APIModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIModel.m; sourceTree = "<group>"; };
+		0333766B205A9B35005C00EE /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0333766C205A9B35005C00EE /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0333766D205A9B35005C00EE /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		03337671205A9F45005C00EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03337672205A9F45005C00EE /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +120,7 @@
 				03337629205A6282005C00EE /* DemoTests */,
 				03337634205A6282005C00EE /* DemoUITests */,
 				0333760F205A6281005C00EE /* Products */,
+				03337670205A9F45005C00EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +137,10 @@
 		03337610205A6281005C00EE /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				03337658205A7C00005C00EE /* Categories */,
+				03337654205A7A9A005C00EE /* Models */,
+				0333764E205A6A93005C00EE /* View */,
+				03337643205A6358005C00EE /* ViewController */,
 				03337611205A6281005C00EE /* AppDelegate.h */,
 				03337612205A6281005C00EE /* AppDelegate.m */,
 				03337614205A6281005C00EE /* ViewController.h */,
@@ -130,6 +170,62 @@
 				03337637205A6282005C00EE /* Info.plist */,
 			);
 			path = DemoUITests;
+			sourceTree = "<group>";
+		};
+		03337643205A6358005C00EE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03337644205A637A005C00EE /* LoginViewController.h */,
+				03337645205A637A005C00EE /* LoginViewController.m */,
+				03337646205A637A005C00EE /* LoginViewController.xib */,
+				03337649205A66A2005C00EE /* DisplayViewController.h */,
+				0333764A205A66A2005C00EE /* DisplayViewController.m */,
+				0333764B205A66A2005C00EE /* DisplayViewController.xib */,
+				0333766B205A9B35005C00EE /* DetailViewController.h */,
+				0333766C205A9B35005C00EE /* DetailViewController.m */,
+				0333766D205A9B35005C00EE /* DetailViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0333764E205A6A93005C00EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0333764F205A6ACF005C00EE /* APIContentTableViewCell.h */,
+				03337650205A6ACF005C00EE /* APIContentTableViewCell.m */,
+				03337651205A6ACF005C00EE /* APIContentTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03337654205A7A9A005C00EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03337655205A7ABE005C00EE /* AbstractModel.h */,
+				03337656205A7ABE005C00EE /* AbstractModel.m */,
+				03337668205A827C005C00EE /* APIModel.h */,
+				03337669205A827C005C00EE /* APIModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03337658205A7C00005C00EE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				03337664205A7CD5005C00EE /* NSDictionary+ReplaceNULL.h */,
+				03337663205A7CD5005C00EE /* NSDictionary+ReplaceNULL.m */,
+				03337662205A7CD4005C00EE /* NSObject+Extension.h */,
+				03337665205A7CD5005C00EE /* NSObject+Extension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		03337670205A9F45005C00EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03337671205A9F45005C00EE /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +334,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03337648205A637A005C00EE /* LoginViewController.xib in Resources */,
+				0333764D205A66A2005C00EE /* DisplayViewController.xib in Resources */,
+				0333766F205A9B35005C00EE /* DetailViewController.xib in Resources */,
+				03337653205A6ACF005C00EE /* APIContentTableViewCell.xib in Resources */,
 				0333761E205A6281005C00EE /* LaunchScreen.storyboard in Resources */,
 				0333761B205A6281005C00EE /* Assets.xcassets in Resources */,
 				03337619205A6281005C00EE /* Main.storyboard in Resources */,
@@ -265,8 +365,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0333764C205A66A2005C00EE /* DisplayViewController.m in Sources */,
+				03337647205A637A005C00EE /* LoginViewController.m in Sources */,
+				03337667205A7CD5005C00EE /* NSObject+Extension.m in Sources */,
 				03337616205A6281005C00EE /* ViewController.m in Sources */,
 				03337621205A6281005C00EE /* main.m in Sources */,
+				03337657205A7ABE005C00EE /* AbstractModel.m in Sources */,
+				03337652205A6ACF005C00EE /* APIContentTableViewCell.m in Sources */,
+				0333766E205A9B35005C00EE /* DetailViewController.m in Sources */,
+				03337666205A7CD5005C00EE /* NSDictionary+ReplaceNULL.m in Sources */,
+				0333766A205A827C005C00EE /* APIModel.m in Sources */,
 				03337613205A6281005C00EE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

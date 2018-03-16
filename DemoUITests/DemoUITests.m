@@ -2,7 +2,7 @@
 //  DemoUITests.m
 //  DemoUITests
 //
-//  Created by Sachin on 15/03/18.
+//  Created by Kinjal on 15/03/18.
 //  Copyright © 2018 Kinjal. All rights reserved.
 //
 
