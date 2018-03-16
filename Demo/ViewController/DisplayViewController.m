@@ -55,29 +55,11 @@
     [self.view addSubview:spinner];
     [spinner startAnimating];
     
-    // *** METHOD : 1 ***
-    //    NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:[NSURL  URLWithString:@"https://content.guardianapis.com/search?q=seychelles&api-key=test"]];
-    //    [request setHTTPMethod:@"GET"];
-    //    [request setValue:@"application/json;charset=UTF-8" forHTTPHeaderField:@"content-type"];
-    //
-    //    NSError *err;
-    //    NSURLResponse *response;
-    //
-    //    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
-    //    NSDictionary *jsonDict = [[[NSJSONSerialization JSONObjectWithData:responseData options: NSJSONReadingMutableContainers error: &err] valueForKey:@"response"] valueForKey:@"results"];
-    //
-    //    for (id model in jsonDict) {
-    //        APIModel *api = [APIModel getModelFromDictionary:model];
-    //        [self.responseArray addObject:api];
-    //    }
-    
-    // *** METHOD : 2 ***
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     NSURL *url = [NSURL URLWithString:@"https://content.guardianapis.com/search?q=seychelles&api-key=test"];
     
-    [[session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        //NSLog(@"Got response %@ with error %@.\n", response, error);
-        //NSLog(@"DATA:\n%@\nEND DATA\n", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+    [[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
         NSDictionary *jsonDict = [[[NSJSONSerialization JSONObjectWithData:data options: NSJSONReadingMutableContainers error:nil] valueForKey:@"response"] valueForKey:@"results"];
         
         for (id model in jsonDict) {
@@ -151,9 +133,8 @@
     //    [self.detailVC.view autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:0];
     //    [self.detailVC.view autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:0];
     //    [self.view layoutIfNeeded];
-    //
+
     [self addChildViewController:self.detailVC];
-    
 }
 
 #pragma mark - External Delegate Methods
