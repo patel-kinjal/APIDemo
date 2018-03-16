@@ -17,6 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
+                <outlet property="searchTextField" destination="gUD-ZN-dgP" id="trD-8m-3nk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,12 +26,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter search text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-ZN-dgP">
+                    <rect key="frame" x="30" y="170" width="315" height="40"/>
+                    <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DyJ-vE-Qix"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi0-zn-t80">
-                    <rect key="frame" x="112" y="318.5" width="150" height="50"/>
+                    <rect key="frame" x="30" y="240" width="315" height="35"/>
                     <color key="backgroundColor" red="0.13725490196078433" green="0.81960784313725488" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="E4b-Ng-qva"/>
-                        <constraint firstAttribute="width" constant="150" id="IGJ-GS-nJ8"/>
+                        <constraint firstAttribute="height" constant="35" id="E4b-Ng-qva"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
                     <state key="normal" title="Proceed">
@@ -45,8 +55,12 @@
                 </button>
             </subviews>
             <constraints>
-                <constraint firstItem="Oi0-zn-t80" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="rDX-dd-wq0"/>
-                <constraint firstItem="Oi0-zn-t80" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="slW-8d-jSW"/>
+                <constraint firstItem="Oi0-zn-t80" firstAttribute="top" secondItem="gUD-ZN-dgP" secondAttribute="bottom" constant="30" id="2pa-OW-Y5q"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gUD-ZN-dgP" secondAttribute="trailing" constant="30" id="BXu-MS-s14"/>
+                <constraint firstItem="Oi0-zn-t80" firstAttribute="leading" secondItem="gUD-ZN-dgP" secondAttribute="leading" id="Sbx-nY-BLd"/>
+                <constraint firstItem="gUD-ZN-dgP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="cyj-5f-DxC"/>
+                <constraint firstItem="Oi0-zn-t80" firstAttribute="trailing" secondItem="gUD-ZN-dgP" secondAttribute="trailing" id="qrx-fO-BW3"/>
+                <constraint firstItem="gUD-ZN-dgP" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="150" id="tbT-8a-ter"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>

@@ -10,6 +10,7 @@
 #import "APIContentTableViewCell.h"
 #import "APIModel.h"
 #import "DetailViewController.h"
+#import "PureLayout.h"
 
 @interface DisplayViewController () <UITableViewDelegate, UITableViewDataSource, DetailViewDelegate>
 
@@ -128,11 +129,11 @@
     
     [self.view addSubview:self.detailVC.view];
     
-    //    [self.detailVC.view autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:0];
-    //    [self.detailVC.view autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:0];
-    //    [self.detailVC.view autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:0];
-    //    [self.detailVC.view autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:0];
-    //    [self.view layoutIfNeeded];
+    [self.detailVC.view autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:0];
+    [self.detailVC.view autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:0];
+    [self.detailVC.view autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:0];
+    [self.detailVC.view autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:0];
+    [self.view layoutIfNeeded];
 
     [self addChildViewController:self.detailVC];
 }

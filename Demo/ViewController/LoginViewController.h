@@ -10,4 +10,6 @@
 
 @interface LoginViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *searchTextField;
+
 @end

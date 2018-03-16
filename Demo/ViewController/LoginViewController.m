@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import "DisplayViewController.h"
 
-@interface LoginViewController ()
+@interface LoginViewController () <UITextFieldDelegate>
 
 @property (strong, nonatomic) DisplayViewController *displayVC;
 
@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.searchTextField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,8 +28,18 @@
 
 - (IBAction)proceedButtonTapped:(id)sender {
     
+    [self.view endEditing:YES];
+
     self.displayVC = [[DisplayViewController alloc] initWithNibName:@"DisplayViewController" bundle:nil];
     [self presentViewController:self.displayVC animated:YES completion:NULL];
+}
+
+#pragma mark - UITextField Delegate Methods
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [self.searchTextField resignFirstResponder];
+    return YES;
 }
 
 @end
